@@ -1,15 +1,11 @@
 <p align="center">
-  <img src="icon-96.png" width="72" height="72" alt="Kimi Auto Continue icon">
+  <img src="https://raw.githubusercontent.com/xtofuub/Raikkonen/main/icon-96.png" width="72" height="72" alt="Raikkonen extension icon">
 </p>
 
 <h1 align="center">Raikkonen</h1>
 
 <p align="center">
   A small Firefox extension that keeps Kimi moving when the queue tells it to take a pit stop.
-</p>
-
-<p align="center">
-  <strong>The repository is called Raikkonen. The extension is still called Kimi Auto Continue.</strong>
 </p>
 
 ## What it does
