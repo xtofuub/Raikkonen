@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kimi Auto Continue</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="identity">
+        <span class="wordmark">Kimi</span>
+        <span class="slash">/</span>
+        <span class="product">Auto continue</span>
+      </div>
+
+      <div id="liveBadge" class="state" aria-live="polite">
+        <span class="state-dot" aria-hidden="true"></span>
+        <span id="liveBadgeText">Running</span>
+      </div>
+    </header>
+
+    <section class="status" aria-labelledby="status-heading">
+      <div class="status-rail" aria-hidden="true"></div>
+
+      <div class="status-main">
+        <span class="status-caption">Current state</span>
+        <h1 id="status-heading">Watching</h1>
+        <p id="status">Loading extension</p>
+      </div>
+
+      <div class="status-meta">
+        <span id="counts">Checking the current tab</span>
+        <time id="statusTime">Just now</time>
+      </div>
+    </section>
+
+    <section class="settings" aria-labelledby="settings-heading">
+      <div class="section-head">
+        <h2 id="settings-heading">Behaviour</h2>
+        <span>Local settings</span>
+      </div>
+
+      <label class="setting">
+        <span class="setting-index">01</span>
+        <span class="setting-copy">
+          <strong>Resume paused tasks</strong>
+          <small>Clicks Continue Task when Kimi stops.</small>
+        </span>
+        <input id="enabled" type="checkbox" aria-label="Resume paused tasks">
+      </label>
+
+      <label class="setting">
+        <span class="setting-index">02</span>
+        <span class="setting-copy">
+          <strong>Close queue notices</strong>
+          <small>Closes any visible Got it notice. Never Upgrade.</small>
+        </span>
+        <input id="dismissTips" type="checkbox" aria-label="Close queue notices">
+      </label>
+
+      <label class="setting">
+        <span class="setting-index">03</span>
+        <span class="setting-copy">
+          <strong>Fast retry</strong>
+          <small>Keeps checking when the tab is in the background.</small>
+        </span>
+        <input id="aggressiveMode" type="checkbox" aria-label="Enable fast retry">
+      </label>
+    </section>
+
+    <button id="scanNow" class="check-button" type="button">
+      <span>Check the current page</span>
+      <span class="button-key" aria-hidden="true">↵</span>
+    </button>
+
+    <footer class="footer">
+      <span>v6.0</span>
+      <span>Kimi tab only</span>
+      <span>Firefox</span>
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
