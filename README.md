@@ -1,11 +1,11 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/xtofuub/Raikkonen/main/icon-96.png" width="72" height="72" alt="Raikkonen extension icon">
-</p>
-
 <h1 align="center">Raikkonen</h1>
 
 <p align="center">
   A small Firefox extension that keeps Kimi moving when the queue tells it to take a pit stop.
+</p>
+
+<p align="center">
+  <img src="assets/preview.svg" width="520" alt="Kimi Auto Continue extension interface preview">
 </p>
 
 ## What it does
@@ -28,12 +28,14 @@ This project is unofficial and is not affiliated with Kimi, Moonshot AI, Kimi R�
 
 ## Install in Firefox
 
-1. Download or clone this repository.
-2. Open `about:debugging` in Firefox.
-3. Select **This Firefox**.
-4. Click **Load Temporary Add-on…**.
-5. Select `manifest.json` from the project folder.
-6. Reload every open Kimi tab with <kbd>Ctrl</kbd> + <kbd>R</kbd>.
+1. Open the repository's **Releases** page.
+2. Download `kimi-auto-continue-firefox-v6.zip` from the latest release.
+3. Extract the ZIP.
+4. Open `about:debugging` in Firefox.
+5. Select **This Firefox**.
+6. Click **Load Temporary Add-on…**.
+7. Select `manifest.json` from the extracted folder.
+8. Reload every open Kimi tab with <kbd>Ctrl</kbd> + <kbd>R</kbd>.
 
 > Firefox removes temporary add-ons after the browser restarts. A permanently installable build must be signed by Mozilla.
 
@@ -66,13 +68,15 @@ Settings and diagnostics are stored locally through Firefox extension storage. T
 
 ```text
 .
-├── content.js       # detection and automatic clicking
-├── popup.html       # extension popup markup
-├── popup.css        # popup styling
-├── popup.js         # popup settings and diagnostics
-├── manifest.json    # Firefox extension manifest
+├── assets/
+│   └── preview.svg   # extension interface preview
+├── content.js        # detection and automatic clicking
+├── popup.html        # extension popup markup
+├── popup.css         # popup styling
+├── popup.js          # popup settings and diagnostics
+├── manifest.json     # Firefox extension manifest
 ├── icon-48.png
-├── icon-96.png
+└── icon-96.png
 ```
 
 ## Development
