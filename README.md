@@ -29,7 +29,7 @@ This project is unofficial and is not affiliated with Kimi, Moonshot AI, Kimi R�
 ## Install in Firefox
 
 1. Open the repository's **Releases** page.
-2. Download `kimi-auto-continue-firefox-v6.zip` from the latest release.
+2. Download `kimi-auto-continue-firefox-v6.0.1.zip` from the latest release.
 3. Extract the ZIP.
 4. Open `about:debugging` in Firefox.
 5. Select **This Firefox**.
@@ -75,8 +75,7 @@ Settings and diagnostics are stored locally through Firefox extension storage. T
 ├── popup.css         # popup styling
 ├── popup.js          # popup settings and diagnostics
 ├── manifest.json     # Firefox extension manifest
-├── icon-48.png
-└── icon-96.png
+└── icon.svg          # scalable Firefox toolbar icon
 ```
 
 ## Development
