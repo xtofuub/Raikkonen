@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="744" height="1126" viewBox="0 0 744 1126" role="img" aria-labelledby="title desc">
+  <title id="title">Kimi Auto Continue extension popup</title>
+  <desc id="desc">Dark Firefox extension interface showing automation status and three enabled settings.</desc>
+  <rect width="744" height="1126" fill="#11110f"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="36" y="63" fill="#ecebe4" font-size="25" font-weight="700">Kimi</text>
+    <text x="102" y="63" fill="#65655f" font-size="25">/</text>
+    <text x="126" y="63" fill="#96958d" font-size="25">Auto continue</text>
+    <rect x="595" y="39" width="16" height="16" rx="4" fill="#c8f26b" stroke="#8eaa50" stroke-width="2"/>
+    <text x="623" y="62" fill="#ecebe4" font-size="22">Running</text>
+    <line x1="36" y1="111" x2="708" y2="111" stroke="#2e2e29" stroke-width="2"/>
+
+    <rect x="36" y="160" width="5" height="194" fill="#c8f26b"/>
+    <text x="72" y="179" fill="#96958d" font-size="20" font-weight="600">Current state</text>
+    <text x="72" y="261" fill="#ecebe4" font-size="70" font-weight="700" letter-spacing="-3">Watching</text>
+    <text x="72" y="316" fill="#96958d" font-size="23">Watching for paused tasks and</text>
+    <text x="72" y="348" fill="#96958d" font-size="23">queue notices.</text>
+    <text x="708" y="210" text-anchor="end" fill="#65655f" font-family="Cascadia Mono, monospace" font-size="18">No action</text>
+    <text x="708" y="236" text-anchor="end" fill="#65655f" font-family="Cascadia Mono, monospace" font-size="18">needed</text>
+    <text x="708" y="347" text-anchor="end" fill="#96958d" font-family="Cascadia Mono, monospace" font-size="18">Just now</text>
+    <line x1="36" y1="399" x2="708" y2="399" stroke="#2e2e29" stroke-width="2"/>
+
+    <text x="36" y="457" fill="#ecebe4" font-size="25" font-weight="700">Behaviour</text>
+    <text x="708" y="454" text-anchor="end" fill="#65655f" font-family="Cascadia Mono, monospace" font-size="17">Local settings</text>
+    <line x1="36" y1="499" x2="708" y2="499" stroke="#2e2e29" stroke-width="2"/>
+
+    <text x="36" y="540" fill="#65655f" font-family="Cascadia Mono, monospace" font-size="18">01</text>
+    <text x="108" y="562" fill="#ecebe4" font-size="24" font-weight="600">Resume paused tasks</text>
+    <text x="108" y="600" fill="#96958d" font-size="20">Clicks Continue Task when Kimi stops.</text>
+    <rect x="631" y="549" width="77" height="48" rx="14" fill="#c8f26b"/>
+    <rect x="670" y="559" width="28" height="28" rx="6" fill="#15170e"/>
+    <line x1="20" y1="643" x2="724" y2="643" stroke="#2e2e29" stroke-width="2"/>
+
+    <text x="36" y="684" fill="#65655f" font-family="Cascadia Mono, monospace" font-size="18">02</text>
+    <text x="108" y="706" fill="#ecebe4" font-size="24" font-weight="600">Close queue notices</text>
+    <text x="108" y="744" fill="#96958d" font-size="20">Closes any visible Got it notice.</text>
+    <text x="108" y="776" fill="#96958d" font-size="20">Never Upgrade.</text>
+    <rect x="631" y="692" width="77" height="48" rx="14" fill="#c8f26b"/>
+    <rect x="670" y="702" width="28" height="28" rx="6" fill="#15170e"/>
+    <line x1="20" y1="787" x2="724" y2="787" stroke="#2e2e29" stroke-width="2"/>
+
+    <text x="36" y="828" fill="#65655f" font-family="Cascadia Mono, monospace" font-size="18">03</text>
+    <text x="108" y="850" fill="#ecebe4" font-size="24" font-weight="600">Fast retry</text>
+    <text x="108" y="888" fill="#96958d" font-size="20">Keeps checking when the tab is in the</text>
+    <text x="108" y="920" fill="#96958d" font-size="20">background.</text>
+    <rect x="631" y="837" width="77" height="48" rx="14" fill="#c8f26b"/>
+    <rect x="670" y="847" width="28" height="28" rx="6" fill="#15170e"/>
+    <line x1="36" y1="933" x2="708" y2="933" stroke="#2e2e29" stroke-width="2"/>
+
+    <rect x="36" y="962" width="672" height="91" rx="3" fill="#c8f26b"/>
+    <text x="66" y="1017" fill="#15170e" font-size="23" font-weight="700">Check the current page</text>
+    <rect x="632" y="986" width="47" height="43" rx="3" fill="none" stroke="#829b4c" stroke-width="2"/>
+    <text x="655" y="1016" text-anchor="middle" fill="#15170e" font-size="22" font-weight="700">↵</text>
+
+    <text x="36" y="1092" fill="#65655f" font-family="Cascadia Mono, monospace" font-size="17">v6.0</text>
+    <text x="372" y="1092" text-anchor="middle" fill="#65655f" font-family="Cascadia Mono, monospace" font-size="17">Kimi tab only</text>
+    <text x="708" y="1092" text-anchor="end" fill="#65655f" font-family="Cascadia Mono, monospace" font-size="17">Firefox</text>
+  </g>
+</svg>
