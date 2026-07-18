@@ -39,8 +39,6 @@ This project is unofficial and is not affiliated with Kimi, Moonshot AI, Kimi R�
 5. Select `manifest.json` from the project folder.
 6. Reload every open Kimi tab with <kbd>Ctrl</kbd> + <kbd>R</kbd>.
 
-You can also download the ready-to-extract archive from [`dist/kimi-auto-continue-firefox-v6.zip`](dist/kimi-auto-continue-firefox-v6.zip).
-
 > Firefox removes temporary add-ons after the browser restarts. A permanently installable build must be signed by Mozilla.
 
 ## Usage
@@ -79,7 +77,6 @@ Settings and diagnostics are stored locally through Firefox extension storage. T
 ├── manifest.json    # Firefox extension manifest
 ├── icon-48.png
 ├── icon-96.png
-└── dist/            # ready-to-extract extension archive
 ```
 
 ## Development
