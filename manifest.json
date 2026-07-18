@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "Kimi Auto Continue",
+  "version": "6.0.0",
+  "description": "Automatically resumes paused Kimi tasks and reliably dismisses visible Got it notices, including while the Kimi tab is in the background.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://kimi.com/*",
+    "https://*.kimi.com/*",
+    "https://kimi.moonshot.cn/*",
+    "https://*.moonshot.cn/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://kimi.com/*",
+        "https://*.kimi.com/*",
+        "https://kimi.moonshot.cn/*",
+        "https://*.moonshot.cn/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "action": {
+    "default_title": "Kimi Auto Continue",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon-48.png",
+      "96": "icon-96.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "kimi-auto-continue-v2@local",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "icons": {
+    "48": "icon-48.png",
+    "96": "icon-96.png"
+  }
+}
