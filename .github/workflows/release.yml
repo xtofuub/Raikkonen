@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - .release/v6.0.0
+      - .release/v6.0.1
 
 permissions:
   contents: write
@@ -20,41 +20,41 @@ jobs:
 
       - name: Package Firefox extension
         run: |
-          zip -9 -j kimi-auto-continue-firefox-v6.zip \
+          zip -9 -j kimi-auto-continue-firefox-v6.0.1.zip \
             manifest.json \
             content.js \
             popup.html \
             popup.css \
             popup.js \
-            icon-48.png \
-            icon-96.png
+            icon.svg
 
       - name: Publish GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           NOTES=$(cat <<'EOF'
-          ## Kimi Auto Continue v6.0.0
+          ## Kimi Auto Continue v6.0.1
 
-          Keeps Kimi moving through queue pauses without requiring constant tab babysitting.
+          Small pit-stop release fixing the Firefox toolbar icon.
 
           ### Included
+          - replaced corrupted PNG assets with a sharp SVG icon
           - automatic **Continue Task** handling
           - reliable **Got it** popup dismissal
           - background-tab monitoring
           - local controls and diagnostics
-          - absolutely no interest in pressing **Upgrade**
+          - still absolutely no interest in pressing **Upgrade**
 
-          Named after the other Kimi, who was also quite good at continuing.
+          Named after the other Kimi, who also preferred a quick pit stop.
           EOF
           )
 
-          if gh release view v6.0.0 >/dev/null 2>&1; then
-            gh release upload v6.0.0 kimi-auto-continue-firefox-v6.zip --clobber
+          if gh release view v6.0.1 >/dev/null 2>&1; then
+            gh release upload v6.0.1 kimi-auto-continue-firefox-v6.0.1.zip --clobber
           else
-            gh release create v6.0.0 \
-              kimi-auto-continue-firefox-v6.zip \
+            gh release create v6.0.1 \
+              kimi-auto-continue-firefox-v6.0.1.zip \
               --target "$GITHUB_SHA" \
-              --title "Kimi Auto Continue v6.0.0" \
+              --title "Kimi Auto Continue v6.0.1" \
               --notes "$NOTES"
           fi
