@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Kimi Auto Continue">
+  <rect width="96" height="96" rx="18" fill="#11110f"/>
+  <rect x="10" y="10" width="8" height="76" rx="2" fill="#c8f26b"/>
+  <path d="M36 24v48M38 49l25-25M39 48l27 25" fill="none" stroke="#ecebe4" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>
