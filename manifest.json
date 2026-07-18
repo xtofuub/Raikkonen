@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Kimi Auto Continue",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Automatically resumes paused Kimi tasks and reliably dismisses visible Got it notices, including while the Kimi tab is in the background.",
   "permissions": [
     "storage",
